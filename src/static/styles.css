@@ -142,3 +142,79 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #e3f2fd;
+  background: linear-gradient(to bottom, #f8f9fa 0%, transparent 100%);
+  border-radius: 4px;
+  padding: 15px 10px 5px 10px;
+}
+
+.participants-section p strong {
+  color: #1a237e;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  color: #444;
+  font-size: 0.9em;
+  background-color: #fff;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border-left: 3px solid #1a237e;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.participants-list li:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+  border-left-color: #3949ab;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: transform 0.2s ease;
+  opacity: 0.6;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  background: transparent;
+}
+
+.no-participants {
+  font-style: italic;
+  color: #999;
+  margin: 10px 0;
+  text-align: center;
+  padding: 15px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px dashed #ddd;
+}
